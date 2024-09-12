@@ -26,6 +26,12 @@
     },
     "description": {
       "type": "text"
+    },
+    "news_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news-list.news-list",
+      "inversedBy": "categories"
     }
   }
 }
